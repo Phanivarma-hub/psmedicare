@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pallavi Sudhir Medicare</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Noto+Serif:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container-highest": "#e2e2e4",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f1f0f2",
+                        "surface-container-low": "#f4f3f5",
+                        "on-tertiary-fixed-variant": "#871845",
+                        "tertiary": "#520025",
+                        "tertiary-fixed-dim": "#ffb1c4",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e8e8ea",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-variant": "#e2e2e4",
+                        "on-surface": "#1a1c1d",
+                        "surface-dim": "#dadadc",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#eeedf0",
+                        "surface-bright": "#faf9fb",
+                        "secondary-container": "#da2b66",
+                        "secondary-fixed": "#ffd9df",
+                        "on-error-container": "#93000a",
+                        "surface-tint": "#6a509e",
+                        "primary": "#301361",
+                        "on-primary": "#ffffff",
+                        "secondary": "#b7024e",
+                        "on-tertiary-container": "#ff7ba4",
+                        "primary-fixed": "#eaddff",
+                        "on-primary-fixed": "#250357",
+                        "on-secondary-fixed": "#3f0016",
+                        "on-secondary-container": "#fffbff",
+                        "on-primary-fixed-variant": "#513884",
+                        "on-error": "#ffffff",
+                        "primary-container": "#462c78",
+                        "primary-fixed-dim": "#d3bbff",
+                        "on-surface-variant": "#494550",
+                        "inverse-surface": "#2f3032",
+                        "background": "#faf9fb",
+                        "inverse-primary": "#d3bbff",
+                        "on-primary-container": "#b498ec",
+                        "surface": "#faf9fb",
+                        "secondary-fixed-dim": "#ffb1c0",
+                        "on-secondary-fixed-variant": "#90003c",
+                        "on-tertiary-fixed": "#3f001a",
+                        "outline": "#7a7581",
+                        "tertiary-container": "#78083a",
+                        "outline-variant": "#cbc4d2",
+                        "on-background": "#1a1c1d",
+                        "tertiary-fixed": "#ffd9e1"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "xs": "4px",
+                        "gutter": "24px",
+                        "lg": "48px",
+                        "md": "24px",
+                        "base": "8px",
+                        "container-max": "1280px",
+                        "sm": "12px",
+                        "xl": "80px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Noto Serif"],
+                        "label-caps": ["Manrope"],
+                        "body-md": ["Manrope"],
+                        "body-lg": ["Manrope"],
+                        "display": ["Noto Serif"],
+                        "headline-lg": ["Noto Serif"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "600" }],
+                        "label-caps": ["12px", { "lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }]
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        
+        @keyframes fade-in {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slide-in-left {
+            from { transform: translateX(-30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        @keyframes slide-in-right {
+            from { transform: translateX(30px); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        .animate-fade-in { animation: fade-in 1s ease-out forwards; }
+        .animate-slide-in-left { animation: slide-in-left 1s ease-out forwards; }
+        .animate-slide-in-right { animation: slide-in-right 1s ease-out forwards; }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-white/90 backdrop-blur-md border-b border-[#EAE6EC] shadow-sm sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<!-- Logo -->
+<div class="flex items-center gap-4">
+<img alt="Pallavi Sudhir Medicare Logo" class="h-12 w-auto object-contain" data-alt="Pallavi Sudhir Medicare corporate logo in deep purple and magenta on transparent background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6RbrNjXhV6VHcWVcLKaICbA7g2I0q3P29POZcZDj3zF1oYUPym8_BPOmbeT1E89EWFLRow_GdvVj5DBIGB9df9jFOCudFXg5Zv6ytSCCBWwzIXnWjsUZQCDDtJVmuembdu8bSuf8l-3OpXScMBvRn0FsxDtDA5KKN7NAfQRKPiTknd8ri6bTXzNXEYXXWx8IIxV0h-ICQM_wm-FNd_IMHlxoPn1zw8EoH0OwWcN0JwUQsQ8U3EntrMbssCTNCbiPwWXZanceuoyCy"/>
+<span class="font-serif text-xl font-bold text-[#462c78] hidden sm:block">Pallavi Sudhir Medicare</span>
+</div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex items-center gap-8 font-serif text-sm font-medium tracking-wide">
+<a class="text-[#462c78] border-b-2 border-[#462c78] pb-1" href="#">Home</a>
+<a class="text-slate-600 hover:text-[#462c78] hover:bg-[#EAE6EC]/50 transition-colors px-2 py-1 rounded" href="#services">Services</a>
+<a class="text-slate-600 hover:text-[#462c78] hover:bg-[#EAE6EC]/50 transition-colors px-2 py-1 rounded" href="#doctors">Doctors</a>
+<a class="text-slate-600 hover:text-[#462c78] hover:bg-[#EAE6EC]/50 transition-colors px-2 py-1 rounded" href="#contact">Contact</a>
+</nav>
+<!-- CTA -->
+<button class="bg-primary-container text-on-primary font-body-md font-semibold px-6 py-2 rounded-lg hover:bg-primary transition-colors shadow-sm hidden sm:block">
+                Book Appointment
+            </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-primary-container">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</header>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[90vh] flex items-center bg-[#faf9fb] overflow-hidden pt-20">
+    <!-- Background Decorative Elements -->
+    <div class="absolute top-0 right-0 w-1/2 h-full bg-[#462c78]/5 -skew-x-12 transform translate-x-1/4 z-0"></div>
+    <div class="absolute bottom-0 left-0 w-64 h-64 bg-[#ef3d75]/10 rounded-full blur-3xl -translate-x-1/2 translate-y-1/2 z-0"></div>
+    
+    <div class="max-w-7xl mx-auto px-6 relative z-10 w-full flex flex-col lg:flex-row items-center gap-12">
+        <!-- Content Side -->
+        <div class="flex-1 space-y-8 animate-slide-in-left">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#462c78]/10 border border-[#462c78]/20">
+                <span class="w-2 h-2 rounded-full bg-[#ef3d75] animate-pulse"></span>
+                <span class="text-xs font-bold tracking-wider text-[#462c78] uppercase">Now Open in Bhimavaram</span>
+            </div>
+            
+            <h1 class="font-serif text-5xl md:text-7xl font-bold text-[#462c78] leading-[1.1]">
+                A New <span class="text-[#ef3d75]">Milestone</span> in <br class="hidden md:block"> Healthcare for Bhimavaram
+            </h1>
+            
+            <p class="font-sans text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
+                Pallavi Sudhir's Medi Care Hospital proudly opens its doors to serve the people of Bhimavaram with advanced medical care, modern facilities, and compassionate service.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-5 pt-4">
+                <button class="px-8 py-4 bg-[#462c78] text-white rounded-xl font-bold shadow-lg shadow-[#462c78]/20 hover:bg-[#35215b] hover:-translate-y-1 transition-all flex items-center justify-center gap-2 group">
+                    <span>Book an Appointment</span>
+                    <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                </button>
+                <button class="px-8 py-4 bg-white text-[#462c78] border-2 border-[#462c78]/10 rounded-xl font-bold hover:border-[#462c78]/30 hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                    <span class="material-symbols-outlined text-xl text-[#ef3d75]">call</span>
+                    <span>08816 22 3344</span>
+                </button>
+            </div>
+            
+            <!-- Trust Indicators -->
+            <div class="flex items-center gap-6 pt-8 border-t border-slate-200">
+                <div class="flex -space-x-3">
+                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=100&h=100" alt="Doctor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&q=80&w=100&h=100" alt="Doctor" class="w-full h-full object-cover">
+                    </div>
+                    <div class="w-10 h-10 rounded-full border-2 border-white bg-slate-300 flex items-center justify-center text-[10px] font-bold text-white uppercase">
+                        +15
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm font-bold text-[#462c78]">Expert Medical Team</p>
+                    <p class="text-xs text-slate-500">24/7 Specialized Care Available</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Image Side -->
+        <div class="flex-1 relative animate-slide-in-right">
+            <div class="relative z-10 rounded-[2rem] overflow-hidden shadow-2xl shadow-[#462c78]/20 border-8 border-white aspect-[4/3]">
+                <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1000" alt="Modern Hospital Interior" class="w-full h-full object-cover">
+                
+                <!-- Floating Info Card -->
+                <div class="absolute bottom-6 left-6 right-6 p-6 glass-card rounded-2xl shadow-xl hidden md:block">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-[#ef3d75] flex items-center justify-center text-white shrink-0">
+                            <span class="material-symbols-outlined">emergency</span>
+                        </div>
+                        <div>
+                            <p class="text-sm font-bold text-[#462c78]">Emergency Ready</p>
+                            <p class="text-xs text-slate-500">Advanced Trauma & Critical Care</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Decorative Background behind image -->
+            <div class="absolute -top-10 -right-10 w-40 h-40 bg-[#ef3d75]/10 rounded-full blur-2xl z-0"></div>
+            <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-[#462c78]/10 rounded-full blur-3xl z-0"></div>
+        </div>
+    </div>
+</section>
+<!-- Why Choose Us / Bento Grid -->
+<section class="py-xl bg-surface-bright" id="why-choose-us">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-lg space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">Why Choose Us</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Committed to providing world-class healthcare with a personal touch in Bhimavaram.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">medical_services</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Advanced Medical Care</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Utilizing the latest protocols and evidence-based treatments to ensure optimal patient outcomes.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">business</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Modern Facilities</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">State-of-the-art infrastructure designed to offer a safe, sterile, and comfortable environment.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 hover:shadow-md transition-shadow group flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-6 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-3xl" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary mb-3">Compassionate Service</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">We treat every patient as family, offering empathetic care and support throughout their journey.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Services Section -->
+<section class="py-xl bg-surface-container-lowest border-t border-outline-variant/30" id="services">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-lg space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Services</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Comprehensive medical care across multiple specialties.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Surgery -->
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-container text-2xl">healing</span>
+<h3 class="font-headline-md text-xl text-primary">Surgery &amp; General</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant font-body-md list-disc list-inside">
+<li>General surgery</li>
+<li>Advanced laparoscopic surgery</li>
+<li>Laparoscopic thyroidectomy</li>
+<li>Laparoscopy</li>
+<li>Gall stones &amp; Appendix</li>
+</ul>
+</div>
+<!-- Oncology -->
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-container text-2xl">oncology</span>
+<h3 class="font-headline-md text-xl text-primary">Oncology</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant font-body-md list-disc list-inside">
+<li>Surgical &amp; Medical oncology</li>
+<li>HIPEC &amp; Breast oncoplasty</li>
+<li>Cancer care: Thyroid, breast, colon, stomach, bone, blood, uterine, cervix, ovary</li>
+<li>Palliative pain</li>
+</ul>
+</div>
+<!-- Gynaecology & IVF -->
+<div class="bg-surface-bright p-6 rounded-xl border border-outline-variant/30">
+<div class="flex items-center gap-3 mb-4">
+<span class="material-symbols-outlined text-secondary-container text-2xl">pregnant_woman</span>
+<h3 class="font-headline-md text-xl text-primary">Gynaecology &amp; IVF</h3>
+</div>
+<ul class="space-y-2 text-on-surface-variant font-body-md list-disc list-inside">
+<li>Infertility, IVF, ICSI, IUI</li>
+<li>PCOD, Fibroid, Irregular periods</li>
+<li>Teenage gynaecology &amp; Poor ovarian reserve</li>
+<li>Hysteroscopy &amp; Ovulation induction</li>
+<li>Male infertility &amp; Pre implantation genetics</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Doctors Section -->
+<section class="py-xl bg-surface-bright border-t border-outline-variant/30" id="doctors">
+<div class="max-w-7xl mx-auto px-6">
+<div class="text-center mb-lg space-y-4">
+<h2 class="font-headline-lg text-headline-lg text-primary">Our Expert Doctors</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Meet our highly qualified and experienced medical professionals.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+<!-- Doctor 1 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-4 overflow-hidden">
+<span class="material-symbols-outlined text-5xl">stethoscope</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Dr. Sudhir Varma Nadimpalli</h3>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm font-semibold text-secondary-container">General &amp; Laparoscopic Surgery, Surgical Oncology</p>
+<p class="font-body-md text-on-surface-variant">MBBS, MS (General &amp; Laparoscopic Surgery), M.Ch Surgical Oncology</p>
+</div>
+<!-- Doctor 2 -->
+<div class="bg-surface-container-lowest p-8 rounded-xl shadow-sm border border-outline-variant/30 flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container mb-4 overflow-hidden">
+<span class="material-symbols-outlined text-5xl">stethoscope</span>
+</div>
+<h3 class="font-headline-md text-2xl text-primary mb-2">Dr. Pallavi Jampana</h3>
+<p class="font-body-md text-on-surface-variant mb-4 text-sm font-semibold text-secondary-container">Reproductive Medicine (IVF) &amp; OBGY</p>
+<p class="font-body-md text-on-surface-variant">MBBS, MS (OBGY) - KMC Manipal, DNB, MRCOG (UK), FRM - Milann Bangalore</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-xl bg-surface-container-lowest border-t border-outline-variant/30" id="contact">
+<div class="max-w-7xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="space-y-8">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-4">Get in Touch</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">We are here to provide you with the best healthcare services. Reach out to us for any inquiries or to book an appointment.</p>
+</div>
+<div class="space-y-6">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">location_on</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Address</h4>
+<p class="text-on-surface-variant font-body-md">D.No 24-10-3, Ward No.1 DNR College Road, Srirampuram Bhimavaram, W.G. District Andhra Pradesh - 534202</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Phone</h4>
+<p class="text-on-surface-variant font-body-md">08816 22 3344</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary-fixed/50 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<h4 class="font-bold text-primary mb-1">Email</h4>
+<p class="text-on-surface-variant font-body-md">info@psmedicare</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-primary-container rounded-2xl p-8 text-on-primary shadow-lg">
+<h3 class="font-headline-md text-2xl mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">schedule</span>
+                    Working Hours
+                </h3>
+<div class="space-y-4">
+<div class="flex justify-between items-center border-b border-on-primary/20 pb-4">
+<span class="font-body-lg">Monday - Saturday</span>
+<span class="font-bold text-primary-fixed">24 Hours</span>
+</div>
+<div class="flex justify-between items-center pt-2">
+<span class="font-body-lg">Sunday</span>
+<span class="font-bold text-primary-fixed">10:00 AM - 2:00 PM</span>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-on-primary/20">
+<p class="font-body-md mb-4 text-primary-fixed-dim">Need immediate assistance?</p>
+<button class="w-full bg-on-primary text-primary-container font-bold py-3 rounded-lg hover:bg-surface transition-colors">
+                        Book Appointment Now
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#EAE6EC] w-full py-12 px-6 flex flex-col items-center gap-8 border-t border-[#462c78]/10 mt-auto">
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Brand -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<span class="font-serif text-lg font-bold text-[#462c78]">Pallavi Sudhir Medicare</span>
+<p class="font-sans text-sm text-slate-700">A new milestone in healthcare for Bhimavaram, providing advanced medical care and compassionate service.</p>
+</div>
+<!-- Contact -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-[#462c78]">CONTACT US</h4>
+<div class="flex items-start gap-2 text-sm text-slate-700">
+<span class="material-symbols-outlined text-base mt-0.5">location_on</span>
+<p>D.No 24-10-3, Ward No.1 DNR College Road, Srirampuram Bhimavaram, W.G. District Andhra Pradesh - 534202</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-slate-700">
+<span class="material-symbols-outlined text-base">call</span>
+<p>08816 22 3344</p>
+</div>
+<div class="flex items-center gap-2 text-sm text-slate-700">
+<span class="material-symbols-outlined text-base">mail</span>
+<p>info@psmedicare</p>
+</div>
+</div>
+<!-- Hours -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-[#462c78]">WORKING HOURS</h4>
+<div class="flex justify-between text-sm text-slate-700 border-b border-[#462c78]/10 pb-2">
+<span>Mon - Sat</span>
+<span class="font-semibold text-[#462c78]">24 Hours</span>
+</div>
+<div class="flex justify-between text-sm text-slate-700 border-b border-[#462c78]/10 pb-2">
+<span>Sunday</span>
+<span class="font-semibold text-secondary-container">10:00 AM - 2:00 PM</span>
+</div>
+</div>
+<!-- Links -->
+<div class="col-span-1 md:col-span-1 flex flex-col gap-4">
+<h4 class="font-label-caps text-label-caps text-[#462c78]">QUICK LINKS</h4>
+<nav class="flex flex-col gap-2 font-sans text-sm text-slate-500">
+<a class="hover:text-[#462c78] hover:underline transition-all focus:ring-2 focus:ring-[#462c78]" href="#">General Surgery</a>
+<a class="hover:text-[#462c78] hover:underline transition-all focus:ring-2 focus:ring-[#462c78]" href="#">Surgical Oncology</a>
+<a class="hover:text-[#462c78] hover:underline transition-all focus:ring-2 focus:ring-[#462c78]" href="#">Infertility</a>
+<a class="hover:text-[#462c78] hover:underline transition-all focus:ring-2 focus:ring-[#462c78]" href="#">Privacy Policy</a>
+</nav>
+</div>
+</div>
+<div class="w-full max-w-7xl border-t border-[#462c78]/10 pt-6 mt-4 text-center">
+<p class="font-sans text-sm text-slate-700">© 2024 Pallavi Sudhir Medicare. All rights reserved.</p>
+</div>
+</footer>
+</body></html>
